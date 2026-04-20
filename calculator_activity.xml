@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="?android:attr/colorBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Display -->
+    <TextView
+        android:id="@+id/display"
+        android:text="0"
+        android:textSize="56sp"
+        android:textColor="?attr/colorPrimary"
+        android:gravity="bottom|end"
+        android:padding="24dp"
+        android:maxLines="1"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"/>
+
+    <!-- Buttons -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:columnCount="4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- Row 1 -->
+        <Button android:text="7" style="@style/calcBtn"/>
+        <Button android:text="8" style="@style/calcBtn"/>
+        <Button android:text="9" style="@style/calcBtn"/>
+        <Button android:text="/" style="@style/calcBtn"/>
+
+        <!-- Row 2 -->
+        <Button android:text="4" style="@style/calcBtn"/>
+        <Button android:text="5" style="@style/calcBtn"/>
+        <Button android:text="6" style="@style/calcBtn"/>
+        <Button android:text="*" style="@style/calcBtn"/>
+
+        <!-- Row 3 -->
+        <Button android:text="1" style="@style/calcBtn"/>
+        <Button android:text="2" style="@style/calcBtn"/>
+        <Button android:text="3" style="@style/calcBtn"/>
+        <Button android:text="-" style="@style/calcBtn"/>
+
+        <!-- Row 4 -->
+        <Button android:text="0" style="@style/calcBtn"/>
+        <Button android:text="C" style="@style/calcBtn"/>
+        <Button android:text="=" style="@style/calcBtn"/>
+        <Button android:text="+" style="@style/calcBtn"/>
+
+    </GridLayout>
+
+</LinearLayout>

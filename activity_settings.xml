@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="?android:attr/colorBackground"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Settings"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="?attr/colorPrimary"
+        android:layout_marginBottom="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/darkModeSwitch"
+        android:text="Enable Dark Mode"
+        android:textSize="18sp"
+        android:textColor="@color/textPrimary"
+        android:layout_marginBottom="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="false"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/shakeSwitch"
+        android:text="Shake to Clear Completed Tasks"
+        android:textSize="18sp"
+        android:textColor="@color/textPrimary"
+        android:layout_marginBottom="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/notifSwitch"
+        android:text="Enable Notifications"
+        android:textSize="18sp"
+        android:textColor="@color/textPrimary"
+        android:layout_marginBottom="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"/>
+
+</LinearLayout>
